@@ -36,3 +36,4 @@ resources:
 tolerations:
   key: "nvidia.com/gpu"
   effect: NoSchedule
+  operator: "Exists"
