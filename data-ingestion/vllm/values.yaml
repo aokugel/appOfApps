@@ -20,7 +20,7 @@ servingModel:
   resources:
     limits:
       cpu: '3500m'
-      memory: 19Gi
+      memory: 18Gi
       nvidia.com/gpu: '1'
     requests:
       cpu: '2'
