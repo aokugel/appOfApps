@@ -19,8 +19,8 @@ servingModel:
     path: /mnt/models
   resources:
     limits:
-      cpu: '4'
-      memory: 20Gi
+      cpu: '3.5'
+      memory: 19Gi
       nvidia.com/gpu: '1'
     requests:
       cpu: '2'
