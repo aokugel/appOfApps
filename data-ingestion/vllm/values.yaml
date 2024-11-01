@@ -11,7 +11,7 @@ minReplicas: 1
 tolerations:
   key: "nvidia.com/gpu"
   effect: NoSchedule
-  operation: Exists
+  operator: Exists
 
 servingModel:
   name: vllm
