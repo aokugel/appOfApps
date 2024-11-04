@@ -13,18 +13,19 @@ tolerations:
   effect: NoSchedule
   operator: Exists
 
+
 servingModel:
   name: vllm
   model:
     path: /mnt/models
   resources:
     limits:
-      cpu: '3500m'
-      memory: 18Gi
+      cpu: '4'
+      memory: 20Gi
       nvidia.com/gpu: '1'
     requests:
       cpu: '2'
-      memory: 15Gi
+      memory: 16Gi
       nvidia.com/gpu: '1'
 
 storage:
