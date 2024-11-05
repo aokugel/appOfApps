@@ -27,6 +27,20 @@ servingModel:
       cpu: '2'
       memory: 16Gi
       nvidia.com/gpu: '1'
+  ### new additions
+  readinessProbe:
+    failureThreshold: 20
+    initialDelaySeconds: 300
+    httpGet:
+      httpHeaders:
+        - name: K-Network-Probe
+          value: queue
+      path: /
+      port: 8012
+      scheme: HTTP
+    periodSeconds: 30
+    successThreshold: 1
+    timeoutSeconds: 1
 
 storage:
   name: 'aws-connection-o-fish-bucket' # Name of the secret holding the storage information

@@ -20,6 +20,8 @@ spec:
       modelFormat:
         name: pytorch
       name: ''
+      readinessProbe: 
+        {{- .Values.servingModel.readinessProbe | toYaml | nindent 8 }}
       resources: 
         {{- .Values.servingModel.resources | toYaml | nindent 8 }}
       runtime: {{ .Values.servingModel.name }}
