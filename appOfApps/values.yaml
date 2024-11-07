@@ -13,7 +13,7 @@ gitops:
   namespace: openshift-gitops
 
 # Passing this value to all of the sub-applications to make it so we can dynamically figure out urls
-clusterDomain: apps.cluster-grw4h.grw4h.sandbox1573.opentlc.com
+clusterDomain: apps.cluster-48v4h.48v4h.sandbox2497.opentlc.com
 
 # Default Values File for the Helm Chart
 defaultValuesFile: values.yaml
